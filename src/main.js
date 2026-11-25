@@ -7,6 +7,17 @@ document.querySelector('#app').innerHTML = `
   <main class="placeholder">
     <h1>Setup works!</h1>
     <p>${questions.length} quiz questions loaded.</p>
+    <p id="server-status">Checking server…</p>
     <p>Replace this screen with your app.</p>
   </main>
 `
+
+fetch('/api/ping')
+  .then((res) => res.json())
+  .then(() => {
+    document.querySelector('#server-status').textContent = 'Server connected ✓'
+  })
+  .catch(() => {
+    document.querySelector('#server-status').textContent =
+      'Server not running. Start the app with npm start.'
+  })
