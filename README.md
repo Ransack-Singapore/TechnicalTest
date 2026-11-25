@@ -1,12 +1,20 @@
 # Play & Win: starter project
 
-A blank app for the Ransack take-home. See the **[client brief](client-brief.pdf)** for what to build.
+A blank app for the Ransack take-home. Build a working **mobile** demo of the app in the **[client brief](client-brief.pdf)**.
 
-> **The data collection part of the brief is optional.** Get the games working first. If you have time, store the data however you like (e.g. `localStorage` or a free database) and explain your choice in your notes.
+**Deadline:** Sunday, 23:59.
+
+**Required (minimum viable product):**
+
+- **The full flow and the data collection.** Everything else is extra.
+- **Save the data to [`database.xlsx`](database.xlsx).** It starts empty. How you get data into it, and what columns you use, is up to you. Explain your approach in your notes.
+- **Keep it flexible.** Keep all settings (questions, pass mark, game limits, text) in one place, and tell us where in your notes. We'll test changing them.
+
+AI for code is fine (and encouraged). Please don't use AI-generated images or artwork.
 
 ## Setup
 
-1. Click **Use this template → Create a new repository** and make it **public**. Please don't fork. Email us the link to your repo as soon as you've created it, so we can follow your progress.
+1. Click **Use this template → Create a new repository** and make it **public**. Please don't fork. Email the link to your repo to **chase@ransack.sg** as soon as you've created it, so we can follow your progress.
 2. Clone your new repo and install [Node.js](https://nodejs.org) 20.19 or newer.
 3. In the project folder, run:
 
@@ -37,13 +45,14 @@ Use either option. Testing on a real phone is best if you can.
 
 ```
 client-brief.pdf         What the client wants
+database.xlsx            The "database": an empty workbook for your data
 public/bg.png            Background image
 src/main.js              App entry point (placeholder screen)
 src/style.css            Global styles
-src/data/questions.json  The 5 quiz questions
+src/data/questions.json  The quiz questions
 ```
 
-Each question has an `answerIndex`: the position of the correct option, counting from 0.
+Questions can have any number of options. Each question has an `answerIndex`: the position of the correct option, counting from 0.
 
 ```json
 { "question": "Which of these is a fruit?", "options": ["Carrot", "Tomato"], "answerIndex": 1 }
@@ -55,6 +64,9 @@ You can use any framework or library, as long as `npm install` and `npm run dev`
 
 Replace this section before you submit.
 
+- **Where to change the settings:**
+- **How the data gets into `database.xlsx`:**
+- **Assumptions I made:**
 - **What I prioritised, and why:**
 - **What I left out or didn't finish, and why:**
 - **Time planned vs. time spent:**

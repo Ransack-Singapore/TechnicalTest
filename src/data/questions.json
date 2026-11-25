@@ -8,8 +8,8 @@
   {
     "id": 2,
     "question": "How many legs does a spider have?",
-    "options": ["8", "6"],
-    "answerIndex": 0
+    "options": ["6", "8", "10"],
+    "answerIndex": 1
   },
   {
     "id": 3,
@@ -20,13 +20,19 @@
   {
     "id": 4,
     "question": "What do bees make?",
-    "options": ["Honey", "Milk"],
-    "answerIndex": 0
+    "options": ["Milk", "Silk", "Honey", "Paper"],
+    "answerIndex": 2
   },
   {
     "id": 5,
     "question": "Which colour do you get when you mix blue and yellow?",
-    "options": ["Purple", "Green"],
+    "options": ["Green", "Purple"],
+    "answerIndex": 0
+  },
+  {
+    "id": 6,
+    "question": "Which animal is the largest?",
+    "options": ["Elephant", "Blue whale", "Giraffe"],
     "answerIndex": 1
   }
 ]
